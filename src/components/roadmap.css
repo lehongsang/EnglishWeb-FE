@@ -1,0 +1,29 @@
+.roadmap-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    min-height: calc(100vh - 200px); /* Đảm bảo phần nội dung chiếm toàn bộ không gian còn lại */
+    box-sizing: border-box; /* Bao gồm cả padding trong chiều cao */
+  }
+  
+  .roadmap-square {
+    width: calc((100% / 2) - 40px); /* Chia đều chiều rộng cho 2 ô và trừ khoảng cách giữa các ô */
+    height: 150px;
+    background-color: #ff7f0e;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer; /* Thay đổi con trỏ chuột khi di chuột qua */
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển đổi màu nền */
+  }
+  
+  .roadmap-square:hover {
+    background-color: #e56c00; /* Màu nền khi di chuột qua */
+  }
+  

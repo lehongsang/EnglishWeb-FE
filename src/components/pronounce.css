@@ -1,0 +1,99 @@
+.pronounce-component {
+    padding: 20px;
+}
+
+.pronounce-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pronounce-row {
+    display: flex;
+    gap: 20px;
+}
+
+.pronounce-card {
+    width: 120px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pronounce-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.pronounce-card.selected {
+    border-color: #1890ff;
+    background-color: #e6f7ff;
+}
+
+.pronounce-symbol {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.pronounce-word {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+.pronounce-details {
+    position: fixed;
+    right: 40px;
+    top: 200px;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e8e8e8;
+}
+
+.pronounce-details h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #1890ff;
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 8px;
+}
+
+.pronounce-details p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.pronounce-details strong {
+    color: #333;
+    margin-right: 8px;
+}
+
+@media (max-width: 1200px) {
+    .pronounce-component {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pronounce-component {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .pronounce-row {
+        flex-direction: column;
+    }
+}
